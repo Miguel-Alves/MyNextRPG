@@ -30,7 +30,7 @@
         <a href="./carrinho.html" class="carrinho"> 
           <img id="logoCarrinho" src="../../assets/img/carrinho.png" width="30px"alt="Carrinho" />
         </a>
-        <a href="signup.html">
+        <a href="./editarPerfil.html">
           <button type="button" class="btn btn-warning">Olá, João!</button>
         </a>
       </div>
@@ -66,39 +66,27 @@
                     <!-- END SIDEBAR BUTTONS -->
                     <!-- SIDEBAR MENU -->
                     <div class="profile-usermenu">
-                        <ul class="nav">
-                            <li>
-                                <a href="./editarPerfil.html"target="_blank">
-                                <i class="glyphicon glyphicon-pencil"></i>
-                                Editar perfil </a>
-                            </li>
-                            <li class="active">
-                                <a href="./perfil-compras.html">
-                                <i class="glyphicon  glyphicon-list-alt"></i>
-                                Minhas compras </a>
-                            </li>
-                            
-                            
-                            
-                            <li>
-                                <a href="./perfil-vendedor.html">
-                                <i class="glyphicon glyphicon-flag"></i>
-                                Vendedor </a>
-                            </li>
-                            <li>
-                                <a href="./perfil-mestre.html">
-                                <i class="glyphicon glyphicon-user"></i>
-                                Mestre </a>
-                            </li>
-                            <li>
-                                <a href="../visitor/home.html">
-                                <i class="glyphicon   glyphicon-off"></i>
-                                Sair </a>
-                            </li>
-                            <li>
-                                <a href="./perfil-excluir.html">
-                                <i class="glyphicon  glyphicon-trash"></i>
-                                Excluir conta </a>
+                      <ul class="nav">
+                          <li>
+                              <a href="./editarPerfil.html"target="_blank">
+                              <i class="glyphicon glyphicon-pencil"></i>
+                              Editar perfil </a>
+                          </li>
+                          <li class="active">
+                              <a href="./perfil-compras.html">
+                              <i class="glyphicon  glyphicon-list-alt"></i>
+                              Minhas compras </a>
+                          </li>
+                  
+                          <li>
+                            <a href="../visitor/home.html">
+                            <i class="glyphicon   glyphicon-off"></i>
+                            Sair </a>
+                        </li>
+                          <li>
+                              <a href="./perfil-excluir.html">
+                              <i class="glyphicon  glyphicon-trash"></i>
+                              Excluir conta </a>
                             </li>
                         </ul>
                     </div>
@@ -115,31 +103,57 @@
                     <h4 class="textBold">Entregue no dia 03 de março</h4>
                     <div class="col-md-5">
                         
-                      <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="100%" height="250px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+                      <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="75%" height="188px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
                     </div>
                     <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
                       <div>
                         <h2 class="featurette-heading fw-normal lh-1">Produto X </h2>
                         <h5>Vendedor: nome do vendedor</h5>
-                        <br><br><br><br><br><br><br>
+                        <br><br><br><br>
                         <h5>
-                            <span>Rastrear</span>
+                            <span> 
+                                 <a href="https://rastreamento.correios.com.br/app/index.php" class="button-link">Rastrear</a>
+                                </span>
                             <span class="vertical-line"></span>
-                            <span>Avaliar produto</span>
-                            <span class="vertical-line"></span>
-                            <span>Detalhes do pedido</span>
+                            <span>
+                                <a href="https://rastreamento.correios.com.br/app/index.php" class="button-link">Avaliar produto</a>
+                                </span>
+                           
+                          
                         </h5>
           
                       </div>
 
                       
-                    
-                    
+    
                 </div>
             </div>
+            <br>
+            <div class="row featurette" style="background-color: #DDDBF1; border-radius: 8px; padding: 16px;">
+                <h4 class="textBold">Expira no dia 20 de julho</h4>
+                <div class="col-md-5">
+                    
+                  <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="75%" height="188px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+                </div>
+                <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+                  <div>
+                    <h2 class="featurette-heading fw-normal lh-1">Nome da mesa</h2>
+                    <h5>Vendedor: nome do vendedor</h5>
+                    <br><br><br><br>
+                    <h5>
+                       
+                        <span><a href="https://rastreamento.correios.com.br/app/index.php" class="button-link">Avaliar mesa</a>
+
+                        </span>
+                        
+                    </h5>
+      
+                  </div>
+
         </div>
         
     </div>
+    
     
     
     
@@ -322,6 +336,18 @@
   background: #0C0D14;
 }
 
+.button-link{
+color:#000000;
+text-decoration: none;
+
+}
+
+.button-link:hover{
+    color:#AAADBE;
+    text-decoration: none;
+
+}
+
 /* Profile container */
 .profile {
   margin: 20px 0;
@@ -442,7 +468,10 @@
     font-weight: bold;
     font-size: 25px;
     
+    
 }
+
+
 
 </style>
 

@@ -30,7 +30,7 @@
         <a href="./carrinho.html" class="carrinho"> 
           <img id="logoCarrinho" src="../../assets/img/carrinho.png" width="30px"alt="Carrinho" />
         </a>
-        <a href="signup.html">
+        <a href="./editarPerfil.html">
           <button type="button" class="btn btn-warning">Olá, João!</button>
         </a>
       </div>
@@ -66,39 +66,35 @@
                     <!-- END SIDEBAR BUTTONS -->
                     <!-- SIDEBAR MENU -->
                     <div class="profile-usermenu">
-                        <ul class="nav">
-                            <li>
-                                <a href="./editarPerfil.html"target="_blank">
-                                <i class="glyphicon glyphicon-pencil"></i>
-                                Editar perfil </a>
-                            </li>
-                            <li class="active">
-                                <a href="./perfil-compras.html">
-                                <i class="glyphicon  glyphicon-list-alt"></i>
-                                Minhas compras </a>
-                            </li>
-                            
+                      <ul class="nav">
+                          <li>
+                              <a href="./editarPerfil.html"target="_blank">
+                              <i class="glyphicon glyphicon-pencil"></i>
+                              Editar perfil </a>
+                          </li>
+                          <li class="active">
+                              <a href="./perfil-compras.html">
+                              <i class="glyphicon  glyphicon-list-alt"></i>
+                              Minhas compras </a>
+                          </li>
                           
-                            
-                            <li>
-                                <a href="./perfil-vendedor.html">
-                                <i class="glyphicon glyphicon-flag"></i>
-                                Vendedor </a>
-                            </li>
-                            <li>
-                                <a href="./perfil-mestre.html">
-                                <i class="glyphicon glyphicon-user"></i>
-                                Mestre </a>
-                            </li>
-                            <li>
-                                <a href="../visitor/home.html">
-                                <i class="glyphicon   glyphicon-off"></i>
-                                Sair </a>
-                            </li>
-                            <li>
-                                <a href="./perfil-excluir.html">
-                                <i class="glyphicon  glyphicon-trash"></i>
-                                Excluir conta </a>
+                          
+                          
+                        
+                          <li>
+                              <a href="./perfil-mestre.html">
+                              <i class="glyphicon glyphicon-user"></i>
+                              Mestre </a>
+                          </li>
+                          <li>
+                            <a href="../visitor/home.html">
+                            <i class="glyphicon   glyphicon-off"></i>
+                            Sair </a>
+                        </li>
+                          <li>
+                              <a href="./perfil-excluir.html">
+                              <i class="glyphicon  glyphicon-trash"></i>
+                              Excluir conta </a>
                             </li>
                         </ul>
                     </div>
@@ -108,38 +104,75 @@
 
             <div class="col-md-9">
                 <div class="profile-content">
-                   <h1 class="perfil">Minhas mesas</h1>
+                   <h1 class="perfil">Editar mesa</h1>
                    <br>
-                   
-                   <div class="row featurette" style="background-color: #DDDBF1; border-radius: 8px; padding: 16px;">
-                    
-                    <div class="col-md-5">
-                        
-                      <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="100%" height="250px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-                    </div>
-                    <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-                      <div>
-                        <h2 class="featurette-heading fw-normal lh-1">Nome da mesa </h2>
-                        
-                        
-                        <br><br><br><br><br><br><br><br>
-                        <h5>
-                            <span>Editar</span>
-                            <span class="vertical-line"></span>
-                            <span>Excluir</span>
-                            
-                        </h5>
-                        
           
-                      </div>
-
+                    <form>
                       
-                    
+                      <div class="form-group1">
+                        <label for="nome">Nome da mesa</label>
+                        <input
+                          type="nomeMesa"
+                          class="form-control"
+                          id="nomeMesa"
+                          placeholder="Nome da mesa"
+                        />
+                      </div>
+                      
+                      <div class="form-group1">
+                        <label for="exampleInputNome1">Descrição</label>
+                        <input
+                          type="descricao"
+                          class="form-control"
+                          id="descricao"
+                          placeholder="Some great placeholder content for the first featurette here. Imagine some exciting prose here."
+                        />
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="jogador">Jogadores</label>
+                        <input
+                          type="jogador"
+                          class="form-control"
+                          id="jogador"
+                          placeholder="0"
+                        />
+                      </div>
+                      <div class="form-group coluna dtNasc">
+                        <label for="sistema">Sistema</label>
+                        <input
+                          type="sistema"
+                          class="form-control"
+                          id="sistema"
+                          placeholder="D&D 5E"
+                        />
+                      </div>
+ 
+                      <div class="form-group coluna cep">
+                        <label for="recorrencia">Recorrência</label>
+                        <input
+                          type="recorrencia"
+                          class="form-control"
+                          id="exampleInputcep1"
+                          placeholder="00000000"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="valor">Valor</label>
+                        <input
+                          type="valor"
+                          class="form-control"
+                          id="valor"
+                          placeholder="R$19,90/sessão"
+                        />
+                      </div>
+                      
+                     
+                      <button class="button">Salvar</button>
+                    </form>
                     
                 </div>
-                
             </div>
-            <h4>+ Adicionar mesa</h4>
         </div>
         
     </div>
@@ -385,6 +418,7 @@
     
 .profile-usermenu {
   margin-top: 30px;
+  border-radius: 10px;
   
 }
 
@@ -422,7 +456,7 @@
 .profile-content {
   padding: 20px;
   background: #fff;
-  min-height: 600px;
+  min-height: 450px;
   border-radius: 10px;
 }
 
@@ -431,21 +465,30 @@
     font-family:'Cherry Bomb One', cursive;
 }
 
-.vertical-line{
-    display: inline-block;
-  width: 1px;
-  height: 1em;
-  background-color: black;
-  vertical-align: middle;
-  margin: 0 5px;
+.button{
+  float: right;
+  border-radius: 8px;
+  border: none;
+  background: #AAADBE;
+  color:#ffffff;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Cherry Bomb One', cursive;
+}
+.button:hover{
+  background: #8668FF;
 
 }
 
-.textBold{
-    font-weight: bold;
-    font-size: 25px;
-    
+.form-group{
+  float:right;
+  width: 50%;
+  padding: 5px;
+  
+
 }
+
 
 
 </style>

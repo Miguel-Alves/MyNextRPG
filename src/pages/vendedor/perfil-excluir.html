@@ -30,7 +30,7 @@
         <a href="./carrinho.html" class="carrinho"> 
           <img id="logoCarrinho" src="../../assets/img/carrinho.png" width="30px"alt="Carrinho" />
         </a>
-        <a href="signup.html">
+        <a href="./editarPerfil.html">
           <button type="button" class="btn btn-warning">Olá, João!</button>
         </a>
       </div>
@@ -66,27 +66,35 @@
                     <!-- END SIDEBAR BUTTONS -->
                     <!-- SIDEBAR MENU -->
                     <div class="profile-usermenu">
-                        <ul class="nav">
-                            <li>
-                                <a href="./editarPerfil.html"target="_blank">
-                                <i class="glyphicon glyphicon-pencil"></i>
-                                Editar perfil </a>
-                            </li>
-                            <li class="active">
-                                <a href="./perfil-compras.html">
-                                <i class="glyphicon  glyphicon-list-alt"></i>
-                                Minhas compras </a>
-                            </li>
-                    
-                            <li>
-                              <a href="../visitor/home.html">
-                              <i class="glyphicon   glyphicon-off"></i>
-                              Sair </a>
+                      <ul class="nav">
+                          <li>
+                              <a href="./editarPerfil.html"target="_blank">
+                              <i class="glyphicon glyphicon-pencil"></i>
+                              Editar perfil </a>
                           </li>
-                            <li>
-                                <a href="./perfil-excluir.html">
-                                <i class="glyphicon  glyphicon-trash"></i>
-                                Excluir conta </a>
+                          <li class="active">
+                              <a href="./perfil-compras.html">
+                              <i class="glyphicon  glyphicon-list-alt"></i>
+                              Minhas compras </a>
+                          </li>
+                          
+                          
+                          
+                          <li>
+                              <a href="./perfil-vendedor.html">
+                              <i class="glyphicon glyphicon-flag"></i>
+                              Vendedor </a>
+                          </li>
+                          
+                          <li>
+                            <a href="../visitor/home.html">
+                            <i class="glyphicon   glyphicon-off"></i>
+                            Sair </a>
+                        </li>
+                          <li>
+                              <a href="./perfil-excluir.html">
+                              <i class="glyphicon  glyphicon-trash"></i>
+                              Excluir conta </a>
                             </li>
                         </ul>
                     </div>
@@ -96,115 +104,12 @@
 
             <div class="col-md-9">
                 <div class="profile-content">
-                   <h1 class="perfil">Perfil</h1>
-                   <br>
-          
-                    <form>
-                      
-                      <div class="form-group">
-                        <label for="cpf1">CPF</label>
-                        <input
-                          type="cpf"
-                          class="form-control"
-                          id="cpf"
-                          placeholder="000.000.000-00"
-                        />
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="exampleInputNome1">Nome</label>
-                        <input
-                          type="nomeCompleto"
-                          class="form-control"
-                          id="João Santos"
-                          aria-describedby="emailHelp"
-                          placeholder="João Santos"
-                        />
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="email1">E-mail</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="joaosantos@gmail.com"
-                          placeholder="joaosantos@gmail.com"
-                        />
-                      </div>
-                      <div class="form-group coluna dtNasc">
-                        <label for="dataDeNascimento1">Data de nascimento</label>
-                        <input
-                          type="dataDeNascimento"
-                          class="form-control"
-                          id="exampleInputdataDeNascimento1"
-                          placeholder="01/01/2001"
-                        />
-                      </div>
-                      
-                      
-                      
-                      
-                      <div class="form-group coluna cep">
-                        <label for="cep1">CEP</label>
-                        <input
-                          type="cep"
-                          class="form-control"
-                          id="exampleInputcep1"
-                          placeholder="00.000-000"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="telefone1">Telefone</label>
-                        <input
-                          type="telefone"
-                          class="form-control"
-                          id="telefone"
-                          placeholder="(00) 00000-0000"
-                        />
-                      </div>
-                      <div class="form-group coluna comp">
-                        <label for="comp1">Complemento</label>
-                        <input
-                          type="complemento"
-                          class="form-control"
-                          id="exampleInputcomp1"
-                          placeholder="xxxxx"
-                        />
-                      </div>
-                      <div class="form-group coluna end">
-                        <label for="endereco1">Endereço</label>
-                        <input
-                          type="endereco"
-                          class="form-control"
-                          id="exampleInputend1"
-                          placeholder="Rua São Francisco"/>
-                      </div>
-                      <div class="form-group">
-                        <label for="confirmarSenha1">Confirmar senha</label>
-                        <input
-                          type="confirmarSenha"
-                          class="form-control"
-                          id="Confirmar senha"
-                          placeholder="*******"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="senha1">Senha</label>
-                        <input
-                          type="senha"
-                          class="form-control"
-                          id="Senha"
-                          placeholder="*******"
-                        />
-                      </div>
-                     
-                      <button class="button">Salvar</button>
-                    </form>
-                    
-                </div>
-            </div>
-        </div>
-        
+                   <h1 class="perfil">Tem certeza que deseja excluir sua conta?</h1>
+                   <br><br>
+                 
+                <a href="./home.html" class="button-link">Sim</a>
+                <br>
+                <a href="./home.html" class="button-link">Não</a>
     </div>
     
     
@@ -448,7 +353,6 @@
     
 .profile-usermenu {
   margin-top: 30px;
-  border-radius: 10px;
   
 }
 
@@ -486,7 +390,7 @@
 .profile-content {
   padding: 20px;
   background: #fff;
-  min-height: 600px;
+  min-height: 300px;
   border-radius: 10px;
 }
 
@@ -495,46 +399,43 @@
     font-family:'Cherry Bomb One', cursive;
 }
 
-.button{
-  float: right;
-  border-radius: 8px;
-  border: none;
-  background: #AAADBE;
-  color:#ffffff;
-  width: 100px;
-  height: 50px;
-  font-size: 20px;
-  font-family: 'Cherry Bomb One', cursive;
-}
-.button:hover{
-  background: #8668FF;
+.vertical-line{
+    display: inline-block;
+  width: 1px;
+  height: 1em;
+  background-color: black;
+  vertical-align: middle;
+  margin: 0 5px;
 
 }
 
-.form-group{
-  float:right;
-  width: 50%;
-  padding: 5px;
-  
-
+.textBold{
+    font-weight: bold;
+    font-size: 25px;
+    
 }
 
-.button{
-  float: right;
-  border-radius: 8px;
-  border: none;
-  background: #AAADBE;
-  color:#ffffff;
-  width: 100px;
-  height: 50px;
-  font-size: 20px;
-  font-family: 'Cherry Bomb One', cursive;
-  margin-right: 10px;
-}
-.button:hover{
-  background: #8668FF;
+.button-link {
+        padding: 10px 20px;
+        background-color:#93a3b5;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: 'Cherry Bomb One', cursive;
+        font-size: 20px;
+      }
 
-}
+      .button-link:hover {
+        background-color: #8668ff;
+        text-decoration: none;
+        color:#000000;
+      }
+
 
 </style>
 
