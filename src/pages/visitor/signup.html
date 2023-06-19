@@ -80,6 +80,8 @@
           }
         }
 
+        
+
         .b-example-divider {
           width: 100%;
           height: 3rem;
@@ -149,12 +151,6 @@
       />
       <link href="../../assets/style/estilo.css" rel="stylesheet" />
 
-      <style>
-        .btn-primary {
-          background-color: #686865;
-          border-color: #686865;
-          opacity: 0.5;
-        }
       </style>
     </head>
     <body class="text-center">
@@ -291,7 +287,7 @@
               />
             </div>
 
-            <div class="form-group coluna">
+            <div class="form-group coluna dtNasc">
               <label for="dataDeNascimento1">Data de nascimento</label>
               <input
                 type="dataDeNascimento"
@@ -301,14 +297,16 @@
               />
             </div>
             <h2 class="form-gênero coluna">Gênero</h2>
+            
             <div class="form-check">
               <input
                 class="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
-                id="flexRadioDefault1"
+                id="flexRadioDefault2"
+                
               />
-              <label class="form-check-label" for="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault2">
                 Masculino
               </label>
             </div>
@@ -377,10 +375,10 @@
               privacidade <br />
             </label>
           </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">
-            Cadastrar
-          </button>
-          <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p>
+          
+            <a href="../logado/home.html" class="button-link">Cadastrar</a>
+         
+         
         </form>
       </main>
     </body>
@@ -391,6 +389,41 @@
         background-image: url("../../assets/img/background.png");
         background-size: cover;
         background-repeat: no-repeat;
+      }
+
+      
+      .h3mb-3fw-normal{
+        font-family: 'Cherry Bomb One', cursive;
+        font-size: 30px;
+        color:#040402;
+
+      }
+
+      .form-signin{
+        background-color: white;
+        border-radius: 10px;
+        opacity: 0.9;
+
+      }
+
+
+      .button-link {
+        padding: 10px 20px;
+        background-color: #1f2030;
+        color: white;
+        text-decoration:none;
+        border-radius: 4px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: 'Cherry Bomb One', cursive;
+        font-size: 20px;
+      }
+
+      .button-link:hover {
+        background-color: #8668ff;
       }
     </style>
   </html>
