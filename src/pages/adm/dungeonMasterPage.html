@@ -22,32 +22,27 @@
 
 
   <body>
-    <header
-      class="flex-wrap justify-content-md-between border-bottom headerContainer"
-    >
+    <header class="flex-wrap justify-content-md-between border-bottom headerContainer">
       <div class="leftHeaderContainer">
         <a href="./home.html" class="logo">
-          <img
-            id="logoImage"
-            src="../../assets/img/logo2.png"
-            width="70px"
-            alt="Logo do Site RPG"
-          />
+          <img id="logoImage" src="../../assets/img/logo2.png" width="70px"alt="Logo do Site RPG" />
         </a>
 
         <ul class="nav">
           <li class="me-2"><a class="fonte" href="./dungeonMasters.html">Mestres</a></li>
-          <li class="me-2"><a class="fonte" href="./gamePage.html">Mesas</a></li>
+          <li class="me-2"><a class="fonte" href="./games.html">Mesas</a></li>
           <li class="me-2"><a class="fonte" href="./products.html">Produtos RPG</a></li>
+          <li class="me-2"><a class="fonte" href="./usuarios.html">Usuários</a></li>
+
         </ul>
       </div>
 
       <div class="rightHeaderContainer">
-        <a href="Login.html">
-          <button type="button" class="btn">Login</button>
+        <a href="./carrinho.html" class="carrinho"> 
+          <img id="logoCarrinho" src="../../assets/img/carrinho.png" width="30px"alt="Carrinho" />
         </a>
-        <a href="signup.html">
-          <button type="button" class="btn btn-warning">Sign-up</button>
+        <a href="./editarPerfil.html">
+          <button type="button" class="btn btn-warning">Olá, João!</button>
         </a>
       </div>
     </header>
@@ -380,6 +375,9 @@
       justify-content: space-between;
       align-items: center;
       list-style: none;
+    }
+    .carrinho{
+      padding-right: 20px;
     }
 
     .logo {

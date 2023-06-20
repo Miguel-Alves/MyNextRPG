@@ -42,6 +42,9 @@
           <li class="me-2">
             <a class="fonte" href="./products.html">Produtos RPG</a>
           </li>
+          <li class="me-2">
+            <a class="fonte" href="./usuarios.html">Usuários</a>
+          </li>
         </ul>
       </div>
 
@@ -54,7 +57,7 @@
             alt="Carrinho"
           />
         </a>
-        <a href="./editarPerfil.html">
+        <a href="editarPerfil.html">
           <button type="button" class="btn btn-warning">Olá, João!</button>
         </a>
       </div>
@@ -110,13 +113,6 @@
                 </li>
 
                 <li>
-                  <a href="./perfil-vendedor.html">
-                    <i class="glyphicon glyphicon-flag"></i>
-                    Vendedor
-                  </a>
-                </li>
-
-                <li>
                   <a href="../visitor/home.html">
                     <i class="glyphicon glyphicon-off"></i>
                     Sair
@@ -136,37 +132,102 @@
 
         <div class="col-md-9">
           <div class="profile-content">
-            <h1 class="perfil">Adicionar produto</h1>
+            <h1 class="perfil">Perfil</h1>
             <br />
 
             <form>
-              <div class="form-group1">
-                <label for="nome">Nome do produto</label>
+              <div class="form-group">
+                <label for="cpf1">CPF</label>
                 <input
-                  type="nomeProduto"
+                  type="cpf"
                   class="form-control"
-                  id="nomeProduto"
-                  placeholder="Nome do Produto"
-                />
-              </div>
-
-              <div class="form-group1">
-                <label for="exampleInputNome1">Descrição</label>
-                <input
-                  type="descricao"
-                  class="form-control"
-                  id="descricao"
-                  placeholder="Some great placeholder content for the first featurette here. Imagine some exciting prose here."
+                  id="cpf"
+                  placeholder="000.000.000-00"
                 />
               </div>
 
               <div class="form-group">
-                <label for="valor">Valor</label>
+                <label for="exampleInputNome1">Nome</label>
                 <input
-                  type="valor"
+                  type="nomeCompleto"
                   class="form-control"
-                  id="valor"
-                  placeholder="R$19,90/sessão"
+                  id="João Santos"
+                  aria-describedby="emailHelp"
+                  placeholder="João Santos"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email1">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="joaosantos@gmail.com"
+                  placeholder="joaosantos@gmail.com"
+                />
+              </div>
+              <div class="form-group coluna dtNasc">
+                <label for="dataDeNascimento1">Data de nascimento</label>
+                <input
+                  type="dataDeNascimento"
+                  class="form-control"
+                  id="exampleInputdataDeNascimento1"
+                  placeholder="01/01/2001"
+                />
+              </div>
+
+              <div class="form-group coluna cep">
+                <label for="cep1">CEP</label>
+                <input
+                  type="cep"
+                  class="form-control"
+                  id="exampleInputcep1"
+                  placeholder="00.000-000"
+                />
+              </div>
+              <div class="form-group">
+                <label for="telefone1">Telefone</label>
+                <input
+                  type="telefone"
+                  class="form-control"
+                  id="telefone"
+                  placeholder="(00) 00000-0000"
+                />
+              </div>
+              <div class="form-group coluna comp">
+                <label for="comp1">Complemento</label>
+                <input
+                  type="complemento"
+                  class="form-control"
+                  id="exampleInputcomp1"
+                  placeholder="xxxxx"
+                />
+              </div>
+              <div class="form-group coluna end">
+                <label for="endereco1">Endereço</label>
+                <input
+                  type="endereco"
+                  class="form-control"
+                  id="exampleInputend1"
+                  placeholder="Rua São Francisco"
+                />
+              </div>
+              <div class="form-group">
+                <label for="confirmarSenha1">Confirmar senha</label>
+                <input
+                  type="confirmarSenha"
+                  class="form-control"
+                  id="Confirmar senha"
+                  placeholder="*******"
+                />
+              </div>
+              <div class="form-group">
+                <label for="senha1">Senha</label>
+                <input
+                  type="senha"
+                  class="form-control"
+                  id="Senha"
+                  placeholder="*******"
                 />
               </div>
 
@@ -450,7 +511,7 @@
     .profile-content {
       padding: 20px;
       background: #fff;
-      min-height: 370px;
+      min-height: 600px;
       border-radius: 10px;
     }
 
@@ -469,6 +530,28 @@
       height: 50px;
       font-size: 20px;
       font-family: "Cherry Bomb One", cursive;
+    }
+    .button:hover {
+      background: #8668ff;
+    }
+
+    .form-group {
+      float: right;
+      width: 50%;
+      padding: 5px;
+    }
+
+    .button {
+      float: right;
+      border-radius: 8px;
+      border: none;
+      background: #aaadbe;
+      color: #ffffff;
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
+      font-family: "Cherry Bomb One", cursive;
+      margin-right: 10px;
     }
     .button:hover {
       background: #8668ff;

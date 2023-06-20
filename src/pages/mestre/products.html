@@ -21,32 +21,21 @@
   </head>
 
   <body>
-    <header
-      class="flex-wrap justify-content-md-between border-bottom headerContainer"
-    >
+    <header class="flex-wrap justify-content-md-between border-bottom headerContainer">
       <div class="leftHeaderContainer">
         <a href="./home.html" class="logo">
-          <img
-            id="logoImage"
-            src="../../assets/img/logo2.png"
-            width="70px"
-            alt="Logo do Site RPG"
-          />
+          <img id="logoImage" src="../../assets/img/logo2.png" width="70px"alt="Logo do Site RPG" />
         </a>
 
         <ul class="nav">
-          <li class="me-2">
-            <a class="fonte" href="./dungeonMasters.html">Mestres</a>
-          </li>
+          <li class="me-2"><a class="fonte" href="./dungeonMasters.html">Mestres</a></li>
           <li class="me-2"><a class="fonte" href="./games.html">Mesas</a></li>
-          <li class="me-2">
-            <a class="fonte" href="./products.html">Produtos RPG</a>
-          </li>
-         
+          <li class="me-2"><a class="fonte" href="./products.html">Produtos RPG</a></li>
+          
         </ul>
       </div>
 
-      <div class="righttHeaderContainer">
+      <div class="rightHeaderContainer">
         <a href="./carrinho.html" class="carrinho"> 
           <img id="logoCarrinho" src="../../assets/img/carrinho.png" width="30px"alt="Carrinho" />
         </a>
@@ -92,7 +81,40 @@
                 <h2>R$ 19,90</h2>
               </div>
               <div>
-                <button type="button" class="btn btn-warning">Adicionar ao carrinho</button>
+                <a href="./productPage.html">
+                  <button type="button" class="btn btn-warning">Ver mais</button>
+                </a>
+                <a href="./carrinho.html">
+                  <button type="button" class="btn btn-warning">Comprar</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" style="color: white;">
+
+        <div class="row featurette" style="background-color: #DDDBF1; border-radius: 8px; padding: 16px;">
+          <div class="col-md-5">
+            <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="100%" height="250px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          </div>
+          <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+            <div>
+              <h2 class="featurette-heading fw-normal lh-1">Produto X muito bom </h2>
+              <h5>Descrição: Some great placeholder content for the first featurette here. Imagine some exciting prose here.</h5>
+              <h5>Vendedor: nome do vendedor</h5>
+
+            </div>
+            
+            <div style="display: flex; flex-direction: row; align-items: center;
+             justify-content: space-between; justify-self: flex-end;">
+              <div>
+                <h2>R$ 19,90</h2>
+              </div>
+              <div>
+                <a href="./productPage.html">
+                  <button type="button" class="btn btn-warning">Ver mais</button>
+                </a>
                 <a href="./carrinho.html" >
                   <button type="button" class="btn btn-warning">Comprar</button>
                 </a>
@@ -121,7 +143,9 @@
                 <h2>R$ 19,90</h2>
               </div>
               <div>
-                <button type="button" class="btn btn-warning">Adicionar ao carrinho</button>
+                <a href="./productPage.html">
+                  <button type="button" class="btn btn-warning">Ver mais</button>
+                </a>
                 <a href="./carrinho.html" >
                   <button type="button" class="btn btn-warning">Comprar</button>
                 </a>
@@ -150,36 +174,9 @@
                 <h2>R$ 19,90</h2>
               </div>
               <div>
-                <button type="button" class="btn btn-warning">Adicionar ao carrinho</button>
-                <a href="./carrinho.html" >
-                  <button type="button" class="btn btn-warning">Comprar</button>
+                <a href="./productPage.html">
+                  <button type="button" class="btn btn-warning">Ver mais</button>
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr class="featurette-divider" style="color: white;">
-
-        <div class="row featurette" style="background-color: #DDDBF1; border-radius: 8px; padding: 16px;">
-          <div class="col-md-5">
-            <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="100%" height="250px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-          </div>
-          <div style="display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-            <div>
-              <h2 class="featurette-heading fw-normal lh-1">Produto X muito bom </h2>
-              <h5>Descrição: Some great placeholder content for the first featurette here. Imagine some exciting prose here.</h5>
-              <h5>Vendedor: nome do vendedor</h5>
-
-            </div>
-            
-            <div style="display: flex; flex-direction: row; align-items: center;
-             justify-content: space-between; justify-self: flex-end;">
-              <div>
-                <h2>R$ 19,90</h2>
-              </div>
-              <div>
-                <button type="button" class="btn btn-warning">Adicionar ao carrinho</button>
                 <a href="./carrinho.html" >
                   <button type="button" class="btn btn-warning">Comprar</button>
                 </a>
@@ -199,7 +196,7 @@
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3" >
         © 2023 Copyright
         <a class="text-white" href="https://mdbootstrap.com/"></a>
       </div>
@@ -234,10 +231,9 @@
     header a:hover {
       color: #8668ff;
     }
-
-    .carrinho{
-      padding-right: 20px;
-      
+    
+    a { 
+      text-decoration: none;
     }
 
     .titleTexts {
@@ -286,12 +282,16 @@
       margin-right: 16px;
     }
 
-    .righttHeaderContainer {
+    .rightHeaderContainer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       list-style: none;
+    }
+
+    .carrinho{
+      padding-right: 20px;
     }
 
     .logo {
@@ -378,6 +378,5 @@
     .search-button:hover {
         background: #AAADBE;
     }
-    
   </style>
 </html>
